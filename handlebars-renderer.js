@@ -38,9 +38,9 @@ function renderHandlebarsTemplate(withTemplate,inElement,withData){
 
 function handlebarsDebugHelper(){
     Handlebars.registerHelper("debug", function(_optionalValue) {
-        console.info("Current Context");
-        console.info("====================");
+        console.group("Current Context");
         console.info(this);
+        console.groupEnd();
     });
 }
 
