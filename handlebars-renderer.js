@@ -33,6 +33,8 @@ async function getTemplate(path, callback) {
 function renderHandlebarsTemplate(withTemplate,inElement,withData){
     getTemplate(withTemplate, function(template) {
         document.querySelector(inElement).innerHTML = template(withData);
+        const renderedEvent = new CustomEvent('handlebars-rendered');
+        document.dispatchEvent(renderedEvent);
     });
 }
 

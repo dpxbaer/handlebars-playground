@@ -2,3 +2,39 @@
     display: flex;
     list-style: none;
 }
+
+.page-navigation__list-item-checkbox {
+    display: none;
+}
+
+.page-navigation__list-item-submenu {
+    background-color: yellow;
+    display: none;
+    position: absolute;
+    left: 0;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 2rem;
+}
+
+.page-navigation__list-item-button {
+    border: none;
+    background-color: transparent;
+    padding: 1rem;
+}
+
+.page-navigation__list-item-checkbox:checked + .page-navigation__list-item-submenu,
+.page-navigation__list-item-submenu--is-open
+{
+    display: block;
+}
+
+.page-navigation__list-item-label {
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.page-navigation__list-item-button--is-open,
+.page-navigation__list-item-label:has(+ .page-navigation__list-item-checkbox:checked) {
+    color: red;
+}

@@ -4,7 +4,8 @@
     <ul class="page-navigation__list">
         {{#items}}
         <li class="page-navigation__list-item">
-            <button class="page-navigation__list-item-button">{{title}}</button>
+            <label for="page-navigation__list-item-{{@index}}" class="page-navigation__list-item-label">{{title}}</label>
+            <input id="page-navigation__list-item-{{@index}}" type="radio" name="page-navigation-item" class="page-navigation__list-item-checkbox" />
             <div class="page-navigation__list-item-submenu">
                 {{> subnavigation subnavigation}}
             </div>
