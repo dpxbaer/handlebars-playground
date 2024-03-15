@@ -16,6 +16,10 @@
 
 See official website to learn more about Handlebars: https://handlebarsjs.com/guide/
 
+### Helpers
+
+- https://handlebarsjs.com/guide/expressions.html#helpers
+
 ### Iterations
 
 The index of the current array item has been available for some time now via `@index`:
