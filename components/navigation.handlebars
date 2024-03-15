@@ -1,0 +1,16 @@
+{{#if id}}
+<nav aria-labelledby="{{id}}" class="page-navigation">
+    <h2 id="{{id}}" class="sr-only">{{headline}}</h2>
+    <ul class="page-navigation__list">
+        {{#items}}
+        <li>
+            <label for="">{{title}}</label>
+            <input type="radio" name="page-navigation-item" />
+            <div>
+                {{> subnavigation subnavigation}}
+            </div>
+        </li>
+        {{/items}}
+    </ul>
+</nav>
+{{/if}}

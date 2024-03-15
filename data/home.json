@@ -1,0 +1,46 @@
+{
+  "myPartialContext": {
+    "headline": "BUU"
+  },
+  "mainNavigation": {
+    "id": "main-navigation",
+    "headline": "Hauptnavigation",
+    "items": [
+      {
+        "title": "Weine",
+        "href": "/weine",
+        "subnavigation": {
+          "headline": "Weintyp",
+          "richTextBanner": "Kaufen Sie <b>Angebot</b>!",
+          "items": [
+            {
+              "title": "Rotweine",
+              "href": "/weine/rotweine"
+            },
+            {
+              "title": "Weißweine",
+              "href": "/weine/weissweine"
+            }
+          ]
+        }
+      },
+      {
+        "title": "Weinberater",
+        "href": "/weinberater",
+        "subnavigation": {
+          "headline": "Weinberater",
+          "items": [
+            {
+              "title": "Weinabo",
+              "href": "/weinberater/weinabo"
+            },
+            {
+              "title": "Vinotecas",
+              "href": "/weinberater/vinotecas"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
